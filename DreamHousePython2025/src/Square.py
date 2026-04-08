@@ -4,7 +4,7 @@ from Shape import Shape
 
 
 class Square(Shape):
-    def __init__(self, canvas: Canvas, x: int = 60, y: int = 50, size: int = 30, line: int = 100, color: str = "black", fill: str = None):
+    def __init__(self, canvas: Canvas, x: int = 40, y: int = 500, size: int = 50, line: int = 100, color: str = "black", fill: str = None):
         super().__init__(canvas=canvas, x=x, y=y, color=color, fill=fill, line=line)
         self.size = size
 

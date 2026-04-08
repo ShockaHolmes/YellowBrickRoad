@@ -16,34 +16,71 @@ class Picture:
         main_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
 
         # Create canvas for drawing
-        self.canvas = tk.Canvas(main_frame, width=600, height=400, bg='lightblue')
+        self.canvas = tk.Canvas(main_frame, width=1200, height=1200, bg='lightblue')
         self.canvas.pack(side=tk.LEFT, padx=(0, 10))
 
         self.wall = None
         self.window = None
+        self.door = None
         self.roof = None
         self.sun = None
 
         self.draw()
 
     def draw(self):
-        self.wall = Square(canvas=self.canvas, size=100, color="red", fill="red", line=2)
-        self.wall.move_horizontal(50)
-        self.wall.move_vertical(80)
+        self.wall = Square(canvas=self.canvas, size=300, color="blue", fill="Blue", line=2)
+        self.wall.move_horizontal(80)
+        self.wall.move_vertical(-350)
         self.wall.make_visible()
 
-        self.window = Square(canvas=self.canvas, size=30, color="black", fill="black", line=1)
-        self.window.move_horizontal(70)
-        self.window.move_vertical(100)
+        self.wall = Square(canvas=self.canvas, size=175, color="blue", fill="Blue", line=2)
+        self.wall.move_horizontal(370)
+        self.wall.move_vertical(-225)
+        self.wall.make_visible()
+
+        self.window = Square(canvas=self.canvas, size=60, color="black", fill="black", line=1)
+        self.window.move_horizontal(120)
+        self.window.move_vertical(-300)
         self.window.make_visible()
 
-        self.roof = Triangle(canvas=self.canvas, height=75, width=150, color="green", fill="green", line=2)
-        self.roof.move_horizontal(35)
-        self.roof.move_vertical(113)
+        self.window = Square(canvas=self.canvas, size=60, color="black", fill="black", line=1)
+        self.window.move_horizontal(280)
+        self.window.move_vertical(-300)
+        self.window.make_visible()
+
+        self.window = Square(canvas=self.canvas, size=60, color="black", fill="black", line=1)
+        self.window.move_horizontal(120)
+        self.window.move_vertical(-150)
+        self.window.make_visible()
+
+        self.window = Square(canvas=self.canvas, size=60, color="black", fill="black", line=1)
+        self.window.move_horizontal(280)
+        self.window.move_vertical(-150)
+        self.window.make_visible()
+
+        self.window = Square(canvas=self.canvas, size=60, color="tan", fill="tan", line=1)
+        self.window.move_horizontal(200)
+        self.window.move_vertical(-120)
+        self.window.make_visible()
+
+        self.window = Square(canvas=self.canvas, size=60, color="tan", fill="tan", line=1)
+        self.window.move_horizontal(200)
+        self.window.move_vertical(-150)
+        self.window.make_visible()
+
+
+        self.roof = Triangle(canvas=self.canvas, height=150, width=350, color="tan", fill="tan", line=2)
+        self.roof.move_horizontal(45)
+        self.roof.move_vertical(135)
+        self.roof.make_visible()
+
+        self.roof = Triangle(canvas=self.canvas, height=225, width=75, color="green", fill="green", line=2)
+        self.roof.move_horizontal(600)
+        self.roof.move_vertical(500)
         self.roof.make_visible()
 
         self.sun = Circle(canvas=self.canvas, diameter=60, color="yellow", fill="yellow", line=1)
-        self.sun.move_horizontal(200)
+        self.sun.move_horizontal(500)
         self.sun.move_vertical(-10)
         self.sun.make_visible()
 

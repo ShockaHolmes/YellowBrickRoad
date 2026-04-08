@@ -3,7 +3,7 @@ from tkinter import Canvas
 
 
 class Shape:
-    def __init__(self, canvas: Canvas, x: int = 60, y: int = 50, color = "black", fill = None, line = 2):
+    def __init__(self, canvas: Canvas, x: int = 20, y: int = 50, color = "black", fill = None, line = 2):
         self.canvas = canvas
         self.color = color
         self.fill = fill
@@ -45,7 +45,7 @@ class Shape:
         self.move_horizontal(-20)
 
     def move_up(self):
-        self.move_vertical(-20)
+        self.move_vertical(50)
 
     def move_down(self):
         self.move_vertical(20)
