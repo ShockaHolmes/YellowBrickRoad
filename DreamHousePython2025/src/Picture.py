@@ -78,6 +78,21 @@ class Picture:
         self.window.move_vertical(-150)
         self.window.make_visible()
 
+        self.window = Square(canvas=self.canvas, size=100, color="black", fill="black", line=1)
+        self.window.move_horizontal(400)
+        self.window.move_vertical(-150)
+        self.window.make_visible()
+
+        self.window = Square(canvas=self.canvas, size=80, color="gray", fill="gray", line=1)
+        self.window.move_horizontal(415)
+        self.window.move_vertical(-50)
+        self.window.make_visible()
+
+        self.window = Square(canvas=self.canvas, size=80, color="gray", fill="gray", line=1)
+        self.window.move_horizontal(415)
+        self.window.move_vertical(0)
+        self.window.make_visible()
+
         self.window = Square(canvas=self.canvas, size=60, color="black", fill="black", line=1)
         self.window.move_horizontal(280)
         self.window.move_vertical(-150)
