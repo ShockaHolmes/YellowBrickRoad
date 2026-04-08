@@ -38,8 +38,33 @@ class Picture:
         self.wall.move_vertical(-225)
         self.wall.make_visible()
 
+        self.wall = Square(canvas=self.canvas, size=1000, color="green", fill="green", line=2)
+        self.wall.move_horizontal(-40)
+        self.wall.move_vertical(-50)
+        self.wall.make_visible()
+
+        self.wall = Square(canvas=self.canvas, size=40, color="gray", fill="gray", line=2)
+        self.wall.move_horizontal(215)
+        self.wall.move_vertical(-50)
+        self.wall.make_visible()
+
+        self.wall = Square(canvas=self.canvas, size=40, color="gray", fill="gray", line=2)
+        self.wall.move_horizontal(215)
+        self.wall.move_vertical(-10)
+        self.wall.make_visible()
+
+        self.wall = Square(canvas=self.canvas, size=40, color="gray", fill="gray", line=2)
+        self.wall.move_horizontal(215)
+        self.wall.move_vertical(10)
+        self.wall.make_visible()
+
+        self.wall = Square(canvas=self.canvas, size=40, color="gray", fill="gray", line=2)
+        self.wall.move_horizontal(215)
+        self.wall.move_vertical(30)
+        self.wall.make_visible()
+
         self.window = Square(canvas=self.canvas, size=60, color="black", fill="black", line=1)
-        self.window.move_horizontal(120)
+        self.window.move_horizontal(130)
         self.window.move_vertical(-300)
         self.window.make_visible()
 
